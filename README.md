@@ -20,6 +20,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 * [x] Splash Screen Implemented
+* [x] Additional User Interface Improvements
 
 ## Video Walkthrough
 
