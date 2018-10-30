@@ -6,6 +6,24 @@
     android:layout_height="match_parent"
     tools:context="com.codepath.simpletodo.MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/Toolbartheme"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+    <TextView
+        android:id="@+id/tv_toolbar"
+        android:textSize="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pacifico"
+        android:textColor="#ffffff"
+        android:text="               Inscribir"/>
+    </android.support.v7.widget.Toolbar>
+
     <Button
         android:id="@+id/btnAddItem"
         android:layout_width="wrap_content"
@@ -20,10 +38,9 @@
         android:id="@+id/lvItems"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/btnAddItem"
+        android:layout_below="@+id/my_toolbar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentStart="true" />
 
     <EditText
         android:id="@+id/etNewItem"

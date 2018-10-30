@@ -2,6 +2,7 @@ package com.codepath.simpletodo;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //getSupportActionBar().setTitle("                             Inscribir");
+        //myToolbar.setTitleTextColor(getResources().getColor(android.R.color.white));
         readItems();
         itemAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, items);
         lvItems = (ListView) findViewById(R.id.lvItems);

@@ -6,6 +6,7 @@ import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.view.WindowManager;
 
+
 public class Splashscreen extends AppCompatActivity {
     private static int SPLASH_TIME_OUT = 3000;
     @Override
